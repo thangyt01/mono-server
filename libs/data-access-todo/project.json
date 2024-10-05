@@ -1,0 +1,9 @@
+{
+  "name": "data-access-todo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/data-access-todo/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project data-access-todo --web",
+  "targets": {}
+}

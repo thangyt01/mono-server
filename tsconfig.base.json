@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-app/common": ["libs/common/src/index.ts"]
+      "@my-app/common": ["libs/common/src/index.ts"],
+      "@my-app/data-access-todo": ["libs/data-access-todo/src/index.ts"],
+      "@my-app/todo-prisma-client": ["libs/todo-prisma-client/src/index.ts"],
+      "@my-app/todo-prisma-schema": ["libs/todo-prisma-schema/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
