@@ -8,4 +8,4 @@ services:
     environment:
       POSTGRES_PASSWORD: 123456
       POSTGRES_USER: root
-      POSTGRES_DB: test_db
+      POSTGRES_DB: todo_db

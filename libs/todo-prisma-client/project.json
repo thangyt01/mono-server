@@ -1,0 +1,9 @@
+{
+  "name": "todo-prisma-client",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/todo-prisma-client/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project todo-prisma-client --web",
+  "targets": {}
+}
