@@ -1,6 +1,5 @@
-import { TodoPrisma, TodoPrismaService } from "@my-app/todo-prisma-client";
-import { Injectable, Logger } from "@nestjs/common";
-
+import { TodoPrisma, TodoPrismaService } from '@my-app/todo-prisma-client';
+import { Injectable, Logger } from '@nestjs/common';
 
 @Injectable()
 export class TodoDataAccessService {
