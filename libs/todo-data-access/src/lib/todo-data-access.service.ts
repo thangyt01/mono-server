@@ -6,7 +6,11 @@ import { Injectable } from "@nestjs/common";
 export class TodoDataAccessService {
   constructor(private readonly todoPrismaClient: TodoPrismaService) {}
 
-  findAll() {
-    return this.todoPrismaClient.todo.findMany();
+  async findAll() {
+    try {
+      return await this.todoPrismaClient.todo.findMany();
+    } catch (error) {
+      throw new Error('Failed to fetch todos');
+    }
   }
 }
