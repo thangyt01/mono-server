@@ -7,3 +7,5 @@ export class TodoPrismaService extends PrismaClient implements OnModuleInit {
     await this.$connect();
   }
 }
+
+export { Prisma as TodoPrisma } from '@my-prisma/client/todo';
