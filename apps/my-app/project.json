@@ -21,6 +21,31 @@
           "buildTarget": "my-app:build:production"
         }
       }
+    },
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "dependsOn": [
+        {
+          "projects": ["todo-prisma-schema"],
+          "target": "generate-types",
+          "params": "forward"
+        }
+      ],
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/my-app",
+        "main": "apps/my-app/src/main.ts",
+        "tsConfig": "apps/my-app/tsconfig.app.json",
+        "assets": ["apps/my-app/src/assets"],
+        "webpackConfig": "apps/my-app/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
     }
   }
 }
