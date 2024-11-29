@@ -56,4 +56,7 @@ COPY --chown=node:node --from=build /app/node_modules /app/node_modules
 
 COPY --chown=node:node --from=build /app/dist /app/dist
 
+# for schema prisma
+COPY --chown=node:node --from=build /app/libs/todo-prisma-schema /app/libs/todo-prisma-schema
+
 CMD [ "node", "dist/apps/my-app/main.js"]

@@ -9,3 +9,12 @@ services:
       POSTGRES_PASSWORD: 123456
       POSTGRES_USER: root
       POSTGRES_DB: todo_db
+
+  mono-server:
+    image: thangyt01/mono-server:1.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      TODO_DATABASE_URL: postgresql://root:123456@db:5432/todo_db?schema=public
