@@ -22,7 +22,8 @@
       "command": "prisma generate",
       "options": {
         "cwd": "libs/todo-prisma-schema"
-      }
+      },
+      "cache": true
     }
   }
 }

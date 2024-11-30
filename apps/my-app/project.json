@@ -45,7 +45,8 @@
       "configurations": {
         "development": {},
         "production": {}
-      }
+      },
+      "cache": true
     }
   }
 }
