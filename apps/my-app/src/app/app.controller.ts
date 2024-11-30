@@ -1,6 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 
 import { AppService } from './app.service';
+import { common } from '@my-app/common';
 
 @Controller()
 export class AppController {
@@ -13,6 +14,7 @@ export class AppController {
 
   @Get()
   getData() {
+    common();
     return this.appService.getData();
   }
 }
