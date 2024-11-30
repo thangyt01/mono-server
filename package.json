@@ -9,7 +9,7 @@
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/mapped-types": "*",
-    "@nestjs/platform-express": "^10.0.2",
+    "@nestjs/platform-express": "^10.4.12",
     "@prisma/client": "^5.20.0",
     "axios": "^1.6.0",
     "class-transformer": "^0.5.1",
